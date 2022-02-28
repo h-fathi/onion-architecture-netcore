@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProLab.Ccl.DomainServices\ProLab.Ccl.DomainServices.csproj" />
+    <ProjectReference Include="..\ProLab.Ccl.Persistence\ProLab.Ccl.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="7.3.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="ProLab.Infrastructure.Core" Version="1.0.0" />
+    <PackageReference Include="ProLab.Infrastructure.Data" Version="1.0.0" />
+    <PackageReference Include="ProLab.Infrastructure.Web" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>

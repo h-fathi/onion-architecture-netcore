@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>faramingostar.com</Company>
+    <Authors>Faramin Gostar</Authors>
+    <Description>Provides the base abstract classes, including ISoftDeletedEntity, IDataIntegrityEntity, IAuditableEntity for all data providers</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="linq2db" Version="3.6.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.13" />
+    <PackageReference Include="System.Linq.Async" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProLab.Infrastructure.Core\ProLab.Infrastructure.Core.csproj" />
+  </ItemGroup>
+
+</Project>
